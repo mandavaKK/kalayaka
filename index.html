@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kalayaka — a simple website." />
+
+    <title>Kalayaka</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">Kalayaka</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1>A simple home for <span class="accent">kalayaka.com</span>.</h1>
+          <p class="lead">
+            This is a starter page you can customize with your logo, content, and links.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn secondary" href="#about">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            Replace this text with a short description of what Kalayaka is. Keep it to 2–4
+            sentences.
+          </p>
+
+          <div class="cards" role="list">
+            <article class="card" role="listitem">
+              <h3>Fast</h3>
+              <p>Static HTML/CSS. Loads quickly and is easy to host anywhere.</p>
+            </article>
+            <article class="card" role="listitem">
+              <h3>Simple</h3>
+              <p>No framework required. Add features only when you need them.</p>
+            </article>
+            <article class="card" role="listitem">
+              <h3>Customizable</h3>
+              <p>Update colors, sections, and copy in a few minutes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Add your contact details here. For example: <span class="mono">hello@kalayaka.com</span>
+          </p>
+
+          <form class="contact" id="contactForm" action="#" method="post">
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="What would you like to say?"
+                required
+              ></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send (demo)</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="tiny">
+            Note: this form is a front-end demo only. To make it actually send email, we can
+            connect it to a service (Formspree, Netlify Forms) or a small backend.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Kalayaka. All rights reserved.</p>
+        <p class="tiny">
+          Built with plain HTML/CSS. <a href="#main">Back to top</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
